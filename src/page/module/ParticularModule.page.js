@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Stack } from 'react-bootstrap'
 import { AttendanceTable } from '../../components/Std-attendance-table/AttendanceTable.comp'
 import attendance from '../../assets/data/dummy-stds.json'
 import {PageBreadcrumb} from "../../components/breadcrumb/Breadcrumb.comp"
@@ -12,6 +12,20 @@ export const ParticularModule = () => {
               <PageBreadcrumb page="Module"/>
               </Col>
           </Row>
+
+          <Stack direction="horizontal" gap={3}>
+                <div className="bg-light border p-2 ">Module Code</div>
+
+                <div className="ms-auto text-center">
+                <Button 
+                    variant='info' 
+                    style={{fontSize:'1rem', padding:"10px 30px"}}>
+                    Take Attendance
+                </Button>
+                </div>
+          </Stack>
+
+
           <Row>
               <Col className='text-center mt-5 mb-2'>
               <Button 
@@ -22,12 +36,9 @@ export const ParticularModule = () => {
           </Row>
           <Row>
               <Col className='text-center mt-5 mb-2'>
-              <div>Total students: 50</div>
-              <div>Absentees: 5</div>
+              <h4>Module Name: Cloud Computing</h4>
+              <h6>Total students: 50</h6>              
               </Col>
-          </Row>
-          <Row>
-              <Col className="mt-2">Module Name</Col>
           </Row>
           <hr />
           <Row>

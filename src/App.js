@@ -9,6 +9,7 @@ import { ParticularModule } from './page/module/ParticularModule.page';
 import {Button} from 'react-bootstrap'
 import { Entry } from './page/entry/Entry page';
 import { AddStudent } from './page/add-student/AddStudent.page';
+import QRCode from 'qrcode';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/add-student">
               <AddStudent/>
             </Route>
+            
           </DefaultLayout>
           
         </Switch>

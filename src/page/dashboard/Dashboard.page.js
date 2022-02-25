@@ -28,10 +28,10 @@ export const Dashboard = () => {
           <hr />
 
           <Stack gap={3}>
-            <div>
-            <Table striped hover>
+            <div >
+            <Table className="bg-light border" hover>
                 <tbody>
-                    <tr>
+                    <tr className='text-info'>
                     <td>Module Code</td>
                     <td>NWC403</td>
                     </tr>
@@ -45,11 +45,11 @@ export const Dashboard = () => {
                     </tr>
                 </tbody>
             </Table>            
-            </div><hr/>
+            </div><br/>
             <div>
-            <Table striped hover>
+            <Table className="bg-light border" hover>
                 <tbody>
-                    <tr>
+                    <tr className='text-info'>
                     <td>Module Code</td>
                     <td>NWC403</td>
                     </tr>
@@ -63,11 +63,11 @@ export const Dashboard = () => {
                     </tr>
                 </tbody>
             </Table>            
-            </div><hr/>
+            </div><br/>
             <div>
-            <Table striped hover>
+            <Table className="bg-light border" hover>
                 <tbody>
-                    <tr>
+                    <tr className='text-info'>
                     <td>Module Code</td>
                     <td>NWC403</td>
                     </tr>

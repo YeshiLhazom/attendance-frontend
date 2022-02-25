@@ -9,8 +9,9 @@ export const AttendanceTable = ({attendance})=> {
               <th>Date</th>
               <th>Student ID</th>
               <th>Name</th>
-              <th>Email</th>              
-              <th>Status</th>
+              <th>No. of classes attended</th>              
+              <th>No. of classes missed</th>
+              <th>Attendance Percentage</th>
           </tr>
       </thead>
       <tbody>
@@ -20,8 +21,9 @@ export const AttendanceTable = ({attendance})=> {
               <td>{row.date}</td>
               <td>{row.id}</td>
               <td>{row.name}</td>
-              <td>{row.email}</td>
-              <td>{row.status}</td>
+              <td>{row.attend}</td>
+              <td>{row.missed}</td>
+              <td>{row.percent}</td>
           </tr>
             )):(
         
